@@ -7,9 +7,7 @@ body {
 .kiki {
   height: 20%;
 }
-/* Add media queries to adjust styles for different screen sizes */
 
-/* Small screen size (e.g. mobile) */
 @media (max-width: 640px) {
   .kiki {
     flex-direction: column;

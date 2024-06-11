@@ -65,7 +65,10 @@ const Header = () => {
             </div>
           </div>
         </header>
-        <div className="mobiview">
+        <div
+          className="mobiview shadow-200xl
+"
+        >
           <div className="-mt-20 shadow-inner">
             <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
               <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -85,26 +88,17 @@ const Header = () => {
                       <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
                         Grow your career fast with Us.
                       </p>
-
+                      <p className="mt-5 -mb-10 text-gray-600">
+                        Already joined us?{" "}
+                      </p>
                       <a
                         title=""
                         className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-[#68f0fa] rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
                         role="button"
                       >
-                        Become a Doer
+                        Login
                       </a>
                     </div>
-
-                    <p className="mt-5 text-gray-600">
-                      Already joined us?{" "}
-                      <a
-                        href="#"
-                        title=""
-                        className="text-black transition-all duration-200 hover:underline"
-                      >
-                        Log in
-                      </a>
-                    </p>
                   </div>
 
                   <div>
