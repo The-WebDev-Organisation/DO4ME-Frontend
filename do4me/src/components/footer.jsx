@@ -14,8 +14,7 @@ const Footer = () => {
               />
 
               <p class="text-base leading-relaxed text-gray-600 mt-7">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
+                We Are Here For Every Need.
               </p>
 
               <ul class="flex items-center space-x-3 mt-9">
@@ -231,7 +230,7 @@ const Footer = () => {
           <hr class="mt-16 mb-10 border-gray-200" />
 
           <p class="text-sm text-center text-gray-600">
-            © Copyright 2021, All Rights Reserved by Postcraft
+            © Copyright 2021, All Rights Reserved by DO4ME.
           </p>
         </div>
       </section>
