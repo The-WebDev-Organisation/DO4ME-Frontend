@@ -1,11 +1,9 @@
 import React from "react";
-
 import LandingPG from "./components/landingPG";
-
 function App() {
   return (
     <div>
-      <LandingPG />
+     <LandingPG />
     </div>
   );
 }
