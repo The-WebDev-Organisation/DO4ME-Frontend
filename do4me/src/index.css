@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-}
+
+
 .kiki {
   height: 20%;
 }
@@ -36,7 +36,6 @@ body {
   }
 }
 
-/* Medium screen size (e.g. tablet) */
 @media (min-width: 641px) and (max-width: 1280px) {
   .kiki {
     flex-direction: row;
@@ -62,7 +61,6 @@ body {
   }
 }
 
-/* Large screen size (e.g. desktop) */
 @media (min-width: 1281px) {
   .kiki {
     flex-direction: row;
