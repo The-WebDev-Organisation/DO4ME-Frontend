@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
+      <section class="py-10 bg-gray-50-50 sm:pt-16 lg:pt-24 bg-black">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
@@ -13,7 +13,7 @@ const Footer = () => {
                 alt=""
               />
 
-              <p class="text-base leading-relaxed text-gray-600 mt-7">
+              <p class="text-base leading-relaxed text-white-600 mt-7">
                 We Are Here For Every Need.
               </p>
 
@@ -104,7 +104,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100 transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     About{" "}
@@ -115,7 +115,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Features{" "}
@@ -126,7 +126,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Works{" "}
@@ -137,7 +137,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title=""
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100 transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Career{" "}
@@ -156,7 +156,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title="gg"
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base  text-gray-100  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Customer Support{" "}
@@ -167,7 +167,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title="cc"
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Delivery Details{" "}
@@ -178,7 +178,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title="kk"
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Terms & Conditions{" "}
@@ -189,7 +189,7 @@ const Footer = () => {
                   <a
                     href="#"
                     title="ww"
-                    class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    class="flex text-base text-gray-100  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {" "}
                     Privacy Policy{" "}

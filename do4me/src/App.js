@@ -1,18 +1,12 @@
 import React from "react";
-import LandingPG from "./components/landingPG";
-<<<<<<< HEAD
 import Contact from "./components/contact";
+import Sign from "./components/Sign";
 import About from "./components/about";
+
 function App() {
   return (
     <div>
-      <Contact />
-=======
-function App() {
-  return (
-    <div>
-     <LandingPG />
->>>>>>> refs/remotes/origin/main
+      <About />
     </div>
   );
 }
