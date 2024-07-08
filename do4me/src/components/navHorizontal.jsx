@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Contact from "./contact";
+import { Link } from "react-router-dom";
 
 const NavHorizontal = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,43 +14,41 @@ const NavHorizontal = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
-              <a href="#" title="" className="flex mb-3">
+              <Link to="/" className="flex mb-3">
                 <img
                   className="w-auto h-20 mt-5"
                   src="https://i.ibb.co/Kh3Jfkm/d4me.png"
                   alt="d4me"
                   border="0"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Navigation for larger screens */}
             <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-              <NavLink title="Home" />
-              <NavLink title="Solutions" />
-              <NavLink title="About" />
-              <NavLink onClick={Contact} title="Contact" />
+              <NavLink to="/" title="Home" />
+              <NavLink to="/services" title="Services" />
+              <NavLink to="/about" title="About" />
+              <NavLink to="/contact" title="Contact" />
             </div>
 
             <div className="flex items-center">
               <div className="hidden lg:block">
-                <a
-                  href="#"
-                  title=""
+                <Link
+                  to="/sign"
                   className="inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-[#68f0fa] rounded-full mr-5"
                   role="button"
                 >
                   Login
-                </a>
+                </Link>
 
-                <a
-                  href="#"
-                  title=""
+                <Link
+                  to="/sign"
                   className="inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
                   role="button"
                 >
                   Join Now
-                </a>
+                </Link>
               </div>
 
               {/* Menu button for smaller screens */}
@@ -79,28 +77,26 @@ const NavHorizontal = () => {
           {/* Dropdown menu for smaller screens */}
           {isMenuOpen && (
             <div className="lg:hidden mt-2 space-y-2">
-              <NavLink title="Home" />
-              <NavLink title="Solutions" />
-              <NavLink title="About" />
-              <NavLink onClick={Contact} title="Contact" />
+              <NavLink to="/" title="Home" />
+              <NavLink to="/services" title="Services" />
+              <NavLink to="/about" title="About" />
+              <NavLink to="/contact" title="Contact" />
 
-              <a
-                href="#"
-                title=""
+              <Link
+                to="/login"
                 className="block px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-[#68f0fa] rounded-full"
                 role="button"
               >
                 Login
-              </a>
+              </Link>
 
-              <a
-                href="#"
-                title=""
+              <Link
+                to="/sign"
                 className="block px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
                 role="button"
               >
                 Join Now
-              </a>
+              </Link>
             </div>
           )}
         </div>
@@ -109,14 +105,14 @@ const NavHorizontal = () => {
   );
 };
 
-const NavLink = ({ title, onClick }) => (
-  <a
-    href="#"
+const NavLink = ({ to, title, onClick }) => (
+  <Link
+    to={to}
     onClick={onClick}
     className="block lg:inline text-base text-black transition-all duration-200 hover:text-opacity-80"
   >
     {title}
-  </a>
+  </Link>
 );
 
 export default NavHorizontal;
