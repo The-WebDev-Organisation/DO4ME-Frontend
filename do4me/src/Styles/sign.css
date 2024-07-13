@@ -16,6 +16,9 @@
   border-radius: 10%;
   min-height: 50%;
 }
+.sisi {
+  flex-direction: row;
+}
 .logo img {
   max-height: 100%;
   max-width: 100%;
