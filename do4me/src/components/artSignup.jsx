@@ -8,27 +8,32 @@ const DashboardPage = () => {
     {
       icon: "https://img.icons8.com/?size=100&id=Yj5svDsC4jQA&format=png&color=000000",
       name: "Dashboard",
+      bgColor: "bg-blue-500",
     },
     {
       icon: "https://img.icons8.com/?size=100&id=hO8FWC0uqKZ1&format=png&color=000000",
       name: "Bookings",
+      bgColor: "bg-green-500",
     },
     {
       icon: "https://img.icons8.com/?size=100&id=ZTBkyXdflAGu&format=png&color=000000",
       name: "Payments",
+      bgColor: "bg-yellow-500",
     },
     {
       icon: "https://img.icons8.com/?size=100&id=61852&format=png&color=000000",
       name: "Completed",
+      bgColor: "bg-purple-500",
     },
-
     {
       icon: "https://img.icons8.com/?size=100&id=2969&format=png&color=000000",
       name: "Settings",
+      bgColor: "bg-red-500",
     },
     {
       icon: " https://img.icons8.com/?size=100&id=26217&format=png&color=000000",
       name: "Log Out",
+      bgColor: "bg-gray-500",
     },
   ];
 
@@ -99,12 +104,18 @@ const DashboardPage = () => {
             key={index}
             className="flex items-center p-4 hover:bg-gray-100 cursor-pointer"
           >
-            <img
-              src={item.icon}
-              alt={`${item.name} icon`}
-              className="w-6 h-6"
-            />
-            {sidebarExpanded && <span className="ml-4">{item.name}</span>}
+            <div
+              className={`w-8 h-8 rounded-full flex items-center justify-center ${item.bgColor}`}
+            >
+              <img
+                src={item.icon}
+                alt={`${item.name} icon`}
+                className="w-5 h-5 filter brightness-0 invert"
+              />
+            </div>
+            {sidebarExpanded && (
+              <span className="ml-4 text-gray-700">{item.name}</span>
+            )}
           </div>
         ))}
       </nav>
@@ -190,25 +201,42 @@ const DashboardPage = () => {
               />
             </div>
           </form>
-          <div className="rounded-full w-10 h-10 bg-black-300 ml-4 flex items-center justify-center">
+          <div className="">
+            <div className="rounded-full w-10 h-10 bg-black-300 ml-4 flex items-center justify-center">
+              <img
+                className="w-8 h-8"
+                src="https://img.icons8.com/?size=100&id=82754&format=png&color=000000"
+                alt="Notification Icon"
+              />
+            </div>
+          </div>
+          <div>
+            <div className="">
+              <div className="ml-5">
+                <h2 className="font">Hello,</h2>
+                <h3 className="text-xl font-bold">Jonathan!</h3>
+                <p className="text-sm text-gray-500">schrodercarporation</p>
+              </div>
+            </div>
+            <div>
+              <img
+                className="w-20 h-20 ml-20"
+                src="https://ouch-cdn2.icons8.com/IwTm-fMSmoymMi8EtBciFCbmHF9SRIbgtnxgmfTbvJM/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTgz/L2FkMmVhMGI5LTBj/YzctNDQ4Mi1iNDIz/LWIyZmYzNzg5NDcz/MS5zdmc.png"
+              />
+            </div>
+          </div>
+          {/* User Profile */}
+          {/* <div className="flex items-center mb-6 mt-40 flex-row-reverse">
             <img
-              className="w-8 h-8"
-              src="https://img.icons8.com/?size=100&id=82754&format=png&color=000000"
-              alt="Notification Icon"
+              className="w-20 h-20 ml-20"
+              src="https://ouch-cdn2.icons8.com/IwTm-fMSmoymMi8EtBciFCbmHF9SRIbgtnxgmfTbvJM/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTgz/L2FkMmVhMGI5LTBj/YzctNDQ4Mi1iNDIz/LWIyZmYzNzg5NDcz/MS5zdmc.png"
             />
-          </div>
-        </div>
-        {/* User Profile */}
-        <div className="flex items-center mb-6 flex-row-reverse">
-          <img
-            className="w-20 h-20 ml-20"
-            src="https://ouch-cdn2.icons8.com/IwTm-fMSmoymMi8EtBciFCbmHF9SRIbgtnxgmfTbvJM/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNTgz/L2FkMmVhMGI5LTBj/YzctNDQ4Mi1iNDIz/LWIyZmYzNzg5NDcz/MS5zdmc.png"
-          />
-          <div className="ml-5">
-            <h2 className="font">Hello,</h2>
-            <h3 className="text-xl font-bold">Jonathan!</h3>
-            <p className="text-sm text-gray-500">schrodercarporation</p>
-          </div>
+            <div className="ml-5">
+              <h2 className="font">Hello,</h2>
+              <h3 className="text-xl font-bold">Jonathan!</h3>
+              <p className="text-sm text-gray-500">schrodercarporation</p>
+            </div>
+          </div> */}
         </div>
 
         {/* Upgrade Card */}

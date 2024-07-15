@@ -6,6 +6,7 @@ import LandingPG from "./components/landingPG";
 import SignUp from "./components/joinnow";
 import DashboardPage from "./components/artSignup";
 import Dashboard from "./components/jina";
+import User from "./components/User";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/jina" element={<Dashboard />} />
+          <Route path="/user" element={<User />} />
         </Routes>
       </Router>
     </div>

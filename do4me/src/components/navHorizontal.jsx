@@ -83,7 +83,7 @@ const NavHorizontal = () => {
               <NavLink to="/contact" title="Contact" />
 
               <Link
-                to="/login"
+                to="/sign"
                 className="block px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-[#68f0fa] rounded-full"
                 role="button"
               >
